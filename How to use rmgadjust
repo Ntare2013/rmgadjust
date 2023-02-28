@@ -1,0 +1,6 @@
+## First do the dccfit with rmgarch package. I have named my dccfit object 'fit1' i.e fit1 <- dccfit(spec=myspec, data=mydata, ... )
+## Run these code lines in R
+library(devtools)  ## install devtools first if you don't have it
+install_github('Ntare2013/rmgadjust')
+library(rmgadjust)
+rmgadjust:::.plot.dccfit.5(fit1, which=5) ## .plot.dccfit.5 is the function name in rmgarch code on github and Since code does not appear in NAMESPACE but can be accessed internally, use :::
